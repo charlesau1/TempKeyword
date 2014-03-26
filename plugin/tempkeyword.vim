@@ -39,7 +39,7 @@ function! AddTempKeywords(index, pattern)
     if !exists(list_name)
         let {list_name} = []
     endif
-    let {list_name} = add({list_name}, matchadd(group_name, a:pattern))
+    let {list_name} = add({list_name}, matchadd(group_name, '\<' . a:pattern . '\>'))
     return len({list_name})
 endfunction
 function! DeleteTempKeywords(index)
