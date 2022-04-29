@@ -55,15 +55,15 @@ function! DeleteTempKeywords(index)
     let {list_name} = []
     return 0
 endfunction
-call DeclareTempKeyword('1k', 'underline,bold', 'Blue', 'White')
-call DeclareTempKeyword('2k', 'underline,bold', 'Green', 'White')
-call DeclareTempKeyword('3k', 'underline,bold', 'Cyan', 'White')
-call DeclareTempKeyword('4k', 'underline,bold', 'Red', 'White')
-call DeclareTempKeyword('5k', 'underline,bold', 'Yellow', 'White')
-call DeclareTempKeyword('6k', 'underline,bold', 'White', 'DarkYellow')
-call DeclareTempKeyword('7k', 'underline,bold', 'White', 'DarkRed')
-call DeclareTempKeyword('8k', 'underline,bold', 'White', 'DarkGreen')
-call DeclareTempKeyword('9k', 'underline,bold', 'White', 'DarkBlue')
-call DeclareTempKeyword('0k', 'underline,bold', 'White', 'DarkMagenta')
+call DeclareTempKeyword('1k', 'underline,bold', 'DarkGrey', 'Blue')
+call DeclareTempKeyword('2k', 'underline,bold', 'DarkGrey', 'Green')
+call DeclareTempKeyword('3k', 'underline,bold', 'DarkGrey', 'Cyan')
+call DeclareTempKeyword('4k', 'underline,bold', 'DarkGrey', 'Red')
+call DeclareTempKeyword('5k', 'underline,bold', 'DarkGrey', 'Yellow')
+call DeclareTempKeyword('6k', 'underline,bold', 'DarkGrey', 'DarkYellow')
+call DeclareTempKeyword('7k', 'underline,bold', 'DarkGrey', 'DarkRed')
+call DeclareTempKeyword('8k', 'underline,bold', 'DarkGrey', 'DarkGreen')
+call DeclareTempKeyword('9k', 'underline,bold', 'DarkGrey', 'DarkBlue')
+call DeclareTempKeyword('0k', 'underline,bold', 'DarkGrey', 'DarkMagenta')
 let cmd = 'nmap ' . TempKeywordCmdPrefix . 'ca :call clearmatches()<CR>'
 execute cmd
